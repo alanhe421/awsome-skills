@@ -28,11 +28,23 @@ const { execSync } = require('child_process');
 function ensureDeps() {
   const nodeModules = path.join(__dirname, 'node_modules', 'tgit-api');
   if (fs.existsSync(nodeModules)) return;
-  process.stderr.write('[tgit] Installing tgit-api dependency (one-time)...\n');
-  execSync('npm install --silent --no-audit --no-fund', {
-    cwd: __dirname,
-    stdio: ['ignore', 'inherit', 'inherit'],
-  });
+  process.stderr.write('[tgit] First-run setup: installing tgit-api into ' + __dirname + ' ...\n');
+  try {
+    execSync('npm install --silent --no-audit --no-fund', {
+      cwd: __dirname,
+      stdio: ['ignore', 'inherit', 'inherit'],
+    });
+  } catch (e) {
+    process.stderr.write(
+      '\n[tgit] Auto-install failed: ' + e.message + '\n' +
+      '\nPlease install the dependency manually, then retry:\n' +
+      '    cd ' + __dirname + ' && npm install\n' +
+      '\nRequirements: Node.js >= 14 and npm available on PATH.\n' +
+      'If you are in a read-only / sandboxed environment, run the install\n' +
+      'from a writable shell first, then re-invoke this skill.\n'
+    );
+    process.exit(4);
+  }
 }
 
 function loadTgit() {
