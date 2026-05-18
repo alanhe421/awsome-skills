@@ -1,0 +1,13 @@
+{
+  "name": "tgit-skill-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wrapper script for invoking tgit-api from Claude skill",
+  "main": "tgit.js",
+  "bin": {
+    "tgit": "./tgit.js"
+  },
+  "dependencies": {
+    "tgit-api": "^0.72.0"
+  }
+}
