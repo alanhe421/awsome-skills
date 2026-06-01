@@ -1,0 +1,2536 @@
+[
+  {
+    "brand": "dashboard.mergeRequests",
+    "methodName": "getMergeRequests4Es",
+    "httpMethod": "GET",
+    "path": "/dashboard/merge_requests",
+    "source": "openapi/api/dashboard/merge_requests/merge_requests.ts"
+  },
+  {
+    "brand": "dashboard.reviews",
+    "methodName": "getReviews4Es",
+    "httpMethod": "GET",
+    "path": "/dashboard/reviews",
+    "source": "openapi/api/dashboard/reviews/reviews.ts"
+  },
+  {
+    "brand": "events",
+    "methodName": "getUserEvents",
+    "httpMethod": "GET",
+    "path": "/events",
+    "source": "openapi/api/events/events.ts"
+  },
+  {
+    "brand": "groups.accessToken",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/access_tokens",
+    "source": "openapi/api/groups/access_token/access_token.ts"
+  },
+  {
+    "brand": "groups.accessToken",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/access_tokens/{id}",
+    "source": "openapi/api/groups/access_token/access_token.ts"
+  },
+  {
+    "brand": "groups.accessToken",
+    "methodName": "getById",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/access_tokens/{id}",
+    "source": "openapi/api/groups/access_token/access_token.ts"
+  },
+  {
+    "brand": "groups.accessToken",
+    "methodName": "list",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/access_tokens",
+    "source": "openapi/api/groups/access_token/access_token.ts"
+  },
+  {
+    "brand": "groups.accessToken",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/access_tokens/{id}",
+    "source": "openapi/api/groups/access_token/access_token.ts"
+  },
+  {
+    "brand": "groups.labels",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/labels",
+    "source": "openapi/api/groups/labels/labels.ts"
+  },
+  {
+    "brand": "groups.labels",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/labels",
+    "source": "openapi/api/groups/labels/labels.ts"
+  },
+  {
+    "brand": "groups.labels",
+    "methodName": "list",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/labels",
+    "source": "openapi/api/groups/labels/labels.ts"
+  },
+  {
+    "brand": "groups.labels",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/labels",
+    "source": "openapi/api/groups/labels/labels.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/members",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "getDirectMember",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "getInheritedMember",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/members/all/{user_id}",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "getUserRoleInGroup",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/members/{user_id}/role",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "listAllGroupMembers",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/members/all",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "listGroupMembers",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/members",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.members",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/groups/members/members.ts"
+  },
+  {
+    "brand": "groups.org",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/org_links",
+    "source": "openapi/api/groups/org/org.ts"
+  },
+  {
+    "brand": "groups.org",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/org_links/{org_link_id}",
+    "source": "openapi/api/groups/org/org.ts"
+  },
+  {
+    "brand": "groups.org",
+    "methodName": "getOrgLinks",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/org_links",
+    "source": "openapi/api/groups/org/org.ts"
+  },
+  {
+    "brand": "groups.org",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/org_links/{org_link_id}",
+    "source": "openapi/api/groups/org/org.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "copyGroupReviewLabels",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/review/labels/copy",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/review/labels",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "createLabelsByTemplate",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/review/labels/template",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/review/labels",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "list",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/review/labels",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.reviews.labels",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/review/labels",
+    "source": "openapi/api/groups/reviews/labels/labels.ts"
+  },
+  {
+    "brand": "groups.userGroup",
+    "methodName": "createUserGroup",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/user_groups",
+    "source": "openapi/api/groups/user_group/user_group.ts"
+  },
+  {
+    "brand": "groups.userGroup",
+    "methodName": "deleteUserGroup",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}/user_groups/{user_group_id}",
+    "source": "openapi/api/groups/user_group/user_group.ts"
+  },
+  {
+    "brand": "groups.userGroup",
+    "methodName": "search",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/user_groups",
+    "source": "openapi/api/groups/user_group/user_group.ts"
+  },
+  {
+    "brand": "groups.userGroup",
+    "methodName": "updateUserGroup",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}/user_groups/{user_group_id}",
+    "source": "openapi/api/groups/user_group/user_group.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/groups",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "create4User",
+    "httpMethod": "POST",
+    "path": "/groups/user/{user_id}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/groups/{id_or_path}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "getGroupDetail",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "getSharedProjectsList",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/projects/shared",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "listGroups",
+    "httpMethod": "GET",
+    "path": "/groups",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "listSubGroups",
+    "httpMethod": "GET",
+    "path": "/groups/{id_or_path}/subgroups",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "transferGroupTo",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/transfer/{group_id}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "transferProjectTo",
+    "httpMethod": "POST",
+    "path": "/groups/{id_or_path}/projects/{project_id}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "transferProjectToPersonalNamespace",
+    "httpMethod": "POST",
+    "path": "/groups/transfer_to_personal_namespace",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "groups",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/groups/{id_or_path}",
+    "source": "openapi/api/groups/groups.ts"
+  },
+  {
+    "brand": "namespaces",
+    "methodName": "listNamespaces",
+    "httpMethod": "GET",
+    "path": "/namespaces",
+    "source": "openapi/api/namespaces/namespaces.ts"
+  },
+  {
+    "brand": "projects.blob.notes",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/blobs/{sha}/notes",
+    "source": "openapi/api/projects/blob/notes/notes.ts"
+  },
+  {
+    "brand": "projects.blob.notes",
+    "methodName": "getNotes4Blob",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/blobs/{sha}/notes",
+    "source": "openapi/api/projects/blob/notes/notes.ts"
+  },
+  {
+    "brand": "projects.blob.notes",
+    "methodName": "replyNote4Blob",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/blobs/{sha}/notes/{note_id}/replies",
+    "source": "openapi/api/projects/blob/notes/notes.ts"
+  },
+  {
+    "brand": "projects.blob.notes",
+    "methodName": "updateNote4Blob",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/blobs/{sha}/notes/{note_id}",
+    "source": "openapi/api/projects/blob/notes/notes.ts"
+  },
+  {
+    "brand": "projects.branches",
+    "methodName": "createDefaultConfigs",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/branch_type_configs",
+    "source": "openapi/api/projects/branches/branches.ts"
+  },
+  {
+    "brand": "projects.branches",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/branch_type_configs",
+    "source": "openapi/api/projects/branches/branches.ts"
+  },
+  {
+    "brand": "projects.certifiedBadges",
+    "methodName": "refreshRule",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/certified_badges/refresh_rule",
+    "source": "openapi/api/projects/certified_badges/certified_badges.ts"
+  },
+  {
+    "brand": "projects.ci",
+    "methodName": "enable",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/ci/enable",
+    "source": "openapi/api/projects/ci/ci.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "getAclConfig",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/acl/config",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateAclEnabled",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/acl_enabled",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateAllowIps",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/allow_ips",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateAllowUsers",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/allow_users",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateBlockIps",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/block_ips",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateBlockUsers",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/block_users",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateSpecAllowIps",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/spec_allow_ips",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config.acl",
+    "methodName": "updateSpecHitUsers",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/acl/config/spec_hit_users",
+    "source": "openapi/api/projects/config/acl/acl.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "getAutoRules",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/config/auto_protected_branch_rules",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "getPushRule",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/push_rule",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "put",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/config/storage",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "updateAutoProtectBranches",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/config/branches",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "updateAutoRules",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/config/auto_protected_branch_rules",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.config",
+    "methodName": "updatePushRule",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/push_rule",
+    "source": "openapi/api/projects/config/config.ts"
+  },
+  {
+    "brand": "projects.fileTemplate",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/file_templates",
+    "source": "openapi/api/projects/file_template/file_template.ts"
+  },
+  {
+    "brand": "projects.fileTemplate",
+    "methodName": "getByType",
+    "httpMethod": "GET",
+    "path": "/file_templates/{type}",
+    "source": "openapi/api/projects/file_template/file_template.ts"
+  },
+  {
+    "brand": "projects.fileTemplate",
+    "methodName": "getByTypeAndName",
+    "httpMethod": "GET",
+    "path": "/file_templates/{type}/{name}",
+    "source": "openapi/api/projects/file_template/file_template.ts"
+  },
+  {
+    "brand": "projects.fileTemplate",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/file_templates/{template_id}",
+    "source": "openapi/api/projects/file_template/file_template.ts"
+  },
+  {
+    "brand": "projects.issues.notes",
+    "methodName": "createNote4Issue",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/notes",
+    "source": "openapi/api/projects/issues/notes/notes.ts"
+  },
+  {
+    "brand": "projects.issues.notes",
+    "methodName": "getNote4Issue",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/notes/{note_id}",
+    "source": "openapi/api/projects/issues/notes/notes.ts"
+  },
+  {
+    "brand": "projects.issues.notes",
+    "methodName": "listNotes4Issue",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/notes",
+    "source": "openapi/api/projects/issues/notes/notes.ts"
+  },
+  {
+    "brand": "projects.issues.notes",
+    "methodName": "updateNote4Issue",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/notes/{note_id}",
+    "source": "openapi/api/projects/issues/notes/notes.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "createIssue",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/issues",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "forkIssue",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/fork",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "getIssue",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues/{issue_id}",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "getIssueByIid",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues/iid/{issue_iid}",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "isSubscribeIssue",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/subscribe",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "listAuthorizedIssues",
+    "httpMethod": "GET",
+    "path": "/issues",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "listProjectIssues",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/issues",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "subscribeIssue",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/subscribe",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "unsubscribeIssue",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/issues/{issue_id}/unsubscribe",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "updateIssueById",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/issues/{issue_id}",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.issues",
+    "methodName": "updateIssueByIid",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/issues/iid/{issue_iid}",
+    "source": "openapi/api/projects/issues/issues.ts"
+  },
+  {
+    "brand": "projects.labels",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/labels",
+    "source": "openapi/api/projects/labels/labels.ts"
+  },
+  {
+    "brand": "projects.labels",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/labels",
+    "source": "openapi/api/projects/labels/labels.ts"
+  },
+  {
+    "brand": "projects.labels",
+    "methodName": "list",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/labels",
+    "source": "openapi/api/projects/labels/labels.ts"
+  },
+  {
+    "brand": "projects.labels",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/labels",
+    "source": "openapi/api/projects/labels/labels.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/members",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "getProjectMember",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "getProjectMemberIncludingInherited",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/members/all/{user_id}",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "getProjectMembers",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/members",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "getProjectMembersIncludingInheritedAndShare",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/members/all",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "multiCreateOrUpdate",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/members/multi",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "multiDelete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/members/multi",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.members",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/members/{user_id}",
+    "source": "openapi/api/projects/members/members.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "acceptMergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/merge",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "commitConflictCheck",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/commit_conflict_check",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "createMergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_requests",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "createNote4MergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/comments",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "createPreMergeCommit",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/iid/{merge_request_iid}/create_pre_merge_commit",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "downloadChangedFiles",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/changed_files",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "getMergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "getMergeRequestByIid",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/iid/{merge_request_iid}",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "getMergeRequestChanges",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/changes",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "getMergeRequestCommits",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/commits",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "isSubscribeMergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/subscribe",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "listNotes4MergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/comments",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "mergeCheck",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/merge_check",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "mergeConflictCheck",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/merge_conflict_check",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "revert",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/revert",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "searchMergeRequests",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_requests",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "subscribeMergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/subscribe",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "unlockHookLock",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/unlock_hook_lock",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "unsubscribeMergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/unsubscribe",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.mergeRequest",
+    "methodName": "updateMergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}",
+    "source": "openapi/api/projects/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.owners",
+    "methodName": "getOwnerConfigs",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/owners",
+    "source": "openapi/api/projects/owners/owners.ts"
+  },
+  {
+    "brand": "projects.owners",
+    "methodName": "getOwnersConfigList",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/owners/config_list",
+    "source": "openapi/api/projects/owners/owners.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/protected_branch_rules",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "deleteById",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}/branches/{branch}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "getByName",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/protected_branches/{branch}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "search",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/protected_branch_rules",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "show",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "updateProtectedBranchRuleCertifiedConfig",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}/certified_reviewer_config",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.protectedBranch",
+    "methodName": "updateRuleId",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/protected_branch_rules/{rule_id}/branches/{branch}",
+    "source": "openapi/api/projects/protected_branch/protected_branch.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "batchInvite4Comparison",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/{review_id}/batch_invite",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "dismiss4Comparison",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/review/{review_id}/dismissals",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "downloadChangedFiles",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/{review_id}/changed_files",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "getReview4Comparison",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/{review_id}",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "getReview4ComparisonByIid",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/iid/{review_iid}",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "getReviews4Comparison",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/reviews",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "getReviewViewedFiles4Comparison",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/{review_id}/viewed_files",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "invite4Comparison",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/{review_id}/invite",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "queryDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/{review_id}/diff",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "reopen4Comparison",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/{review_id}/reopen",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "submitSummary",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/{review_id}/reviewer/summary",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "update4Comparison",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/{review_id}",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.comparison",
+    "methodName": "updateUsedTime",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/{review_id}/active",
+    "source": "openapi/api/projects/reviews/comparison/comparison.ts"
+  },
+  {
+    "brand": "projects.reviews.fileOwner",
+    "methodName": "create",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/{review_id}/owner",
+    "source": "openapi/api/projects/reviews/file_owner/file_owner.ts"
+  },
+  {
+    "brand": "projects.reviews.fileOwner",
+    "methodName": "deleteOwner",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/review/{review_id}/owner",
+    "source": "openapi/api/projects/reviews/file_owner/file_owner.ts"
+  },
+  {
+    "brand": "projects.reviews.fileOwner",
+    "methodName": "getReviewFileOwnerByReviewId",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/{review_id}/owner",
+    "source": "openapi/api/projects/reviews/file_owner/file_owner.ts"
+  },
+  {
+    "brand": "projects.reviews.fileOwner",
+    "methodName": "submitSummary",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/{review_id}/owner/submit",
+    "source": "openapi/api/projects/reviews/file_owner/file_owner.ts"
+  },
+  {
+    "brand": "projects.reviews.intelligent",
+    "methodName": "getReviewIntelligentResultByIid",
+    "httpMethod": "GET",
+    "path": "/api/copilot/v3/open/projects/{id_or_path}/reviews/{review_iid}/intelligent/result",
+    "source": "openapi/api/projects/reviews/intelligent/review-intelligent.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "copyProjectReviewLabels",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/labels/copy",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/labels",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "createLabelsByTemplate",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/review/labels/template",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/review/labels",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "list",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/review/labels",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.label",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/review/labels",
+    "source": "openapi/api/projects/reviews/label/label.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "batchInvite4MergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review/batch_invite",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "cancel4MergeRequest",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review/cancel",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "dismiss4MergeRequest",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review/dismissals",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "getReview4MergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "getReview4MergeRequestByIid",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/iid/{merge_request_iid}/review",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "getReviewViewedFiles4MergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/viewed_files",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "invite4MergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review/invite",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "reopen4MergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/review/reopen",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.mergeRequest",
+    "methodName": "submitSummary",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_request/{merge_request_id}/reviewer/summary",
+    "source": "openapi/api/projects/reviews/merge_request/merge_request.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "createNote4MergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_requests/{merge_request_id}/notes",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "createNote4Review",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/reviews/{review_id}/notes",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "getNote4MergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_requests/{merge_request_id}/notes/{note_id}",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "getNote4Review",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/reviews/{review_id}/notes/{note_id}",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "listNotes4MergeRequest",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/merge_requests/{merge_request_id}/notes",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "listNotes4Review",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/reviews/{review_id}/notes",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "replyNote4MergeRequest",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/merge_requests/{merge_request_id}/notes/{note_id}/replies",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "replyNote4Review",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/reviews/{review_id}/notes/{note_id}/replies",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "searchNotes",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/notes",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "updateNote4MergeRequest",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/merge_requests/{merge_request_id}/notes/{note_id}",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.reviews.notes",
+    "methodName": "updateNote4Review",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/reviews/{review_id}/notes/{note_id}",
+    "source": "openapi/api/projects/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.rule_sets",
+    "methodName": "getProjectReviewRules",
+    "httpMethod": "GET",
+    "path": "/api/copilot/v3/projects/{projectIdOrPath}/rule_sets",
+    "source": "openapi/api/projects/rule_sets/rule_sets.ts"
+  },
+  {
+    "brand": "projects.rule_sets",
+    "methodName": "getRuleSetRule",
+    "httpMethod": "GET",
+    "path": "/api/copilot/v3/projects/{projectIdOrPath}/rule_sets/{rule_set_id}/rules/{rule_id}",
+    "source": "openapi/api/projects/rule_sets/rule_sets.ts"
+  },
+  {
+    "brand": "projects.rule_sets",
+    "methodName": "searchRuleSetRulesByFilePaths",
+    "httpMethod": "POST",
+    "path": "/api/copilot/v3/projects/{projectIdOrPath}/rule_sets/{rule_set_id}/rules/match",
+    "source": "openapi/api/projects/rule_sets/rule_sets.ts"
+  },
+  {
+    "brand": "projects.scan",
+    "methodName": "uploadScanFileResults",
+    "httpMethod": "POST",
+    "path": "/scan/files/{platform}",
+    "source": "openapi/api/projects/scan/scan.ts"
+  },
+  {
+    "brand": "projects.scan",
+    "methodName": "uploadScanProjectResults",
+    "httpMethod": "POST",
+    "path": "/scan/projects/{platform}",
+    "source": "openapi/api/projects/scan/scan.ts"
+  },
+  {
+    "brand": "projects.svn.reviews.notes",
+    "methodName": "getNote4Review",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/reviews/{review_id}/notes/{note_id}",
+    "source": "openapi/api/projects/svn/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.svn.reviews.notes",
+    "methodName": "listNotes4Review",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/reviews/{review_id}/notes",
+    "source": "openapi/api/projects/svn/reviews/notes/notes.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "batchInvite4Comparison",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/review/{review_id}/batch_invite",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "createReview",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/reviews",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "createReviewPatchSet",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/reviews/{review_id}/patch_sets",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "dismiss4Comparison",
+    "httpMethod": "DELETE",
+    "path": "/svn/projects/{id_or_path}/review/{review_id}/dismissals",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "getReviewById",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/reviews/{review_id}",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "getReviewByIid",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/reviews/iid/{review_iid}",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "getReviews",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/reviews",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "invite4Comparison",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/review/{review_id}/invite",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.svn.reviews",
+    "methodName": "update4Comparison",
+    "httpMethod": "PUT",
+    "path": "/svn/projects/{id_or_path}/review/{review_id}",
+    "source": "openapi/api/projects/svn/reviews/reviews.ts"
+  },
+  {
+    "brand": "projects.tapd",
+    "methodName": "createTapdWorkitem",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/tapd_workitem",
+    "source": "openapi/api/projects/tapd/tapd.ts"
+  },
+  {
+    "brand": "projects.tapd",
+    "methodName": "getTapdWorkItems",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tapd_workitems",
+    "source": "openapi/api/projects/tapd/tapd.ts"
+  },
+  {
+    "brand": "projects.uploads",
+    "methodName": "uploads",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/uploads",
+    "source": "openapi/api/projects/uploads/uploads.ts"
+  },
+  {
+    "brand": "projects.watchers",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/watch",
+    "source": "openapi/api/projects/watchers/watchers.ts"
+  },
+  {
+    "brand": "projects.watchers",
+    "methodName": "isWatched",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/watch",
+    "source": "openapi/api/projects/watchers/watchers.ts"
+  },
+  {
+    "brand": "projects.watchers",
+    "methodName": "listWatchers",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/watchers",
+    "source": "openapi/api/projects/watchers/watchers.ts"
+  },
+  {
+    "brand": "projects.watchers",
+    "methodName": "watch",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/watch",
+    "source": "openapi/api/projects/watchers/watchers.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/star",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "get",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "isStar",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/star",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "list",
+    "httpMethod": "POST",
+    "path": "/projects",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "listStars",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/stars",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "listTags",
+    "httpMethod": "GET",
+    "path": "/tags/{id}/{type}",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "star",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/star",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "projects",
+    "methodName": "updateProtectCertifiedConfig",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/certified_reviewer_config",
+    "source": "openapi/api/projects/projects.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "batchDelete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/branches",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/branches",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "getBranch",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "getBranchConfig",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/branch_settings",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "getMergeBaseOfBranches",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/branches/merge_base",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "getProtectedBranch",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}/protect",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "listBranches",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/branches",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "merge",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branches/merge",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "protectBranch",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}/protect",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "unprotectBranch",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}/unprotect",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branches/{branch_name}",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "updateBranch",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branch_settings",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "updateBranchConfig",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branch_settings/branch_types",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.branches",
+    "methodName": "updateProtectedBranchConfig",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/branches/{branch}/config",
+    "source": "openapi/api/repository/git/branches/branches.ts"
+  },
+  {
+    "brand": "repository.git.cherryPicks",
+    "methodName": "createCherryPick",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/cherry_picks",
+    "source": "openapi/api/repository/git/cherry_picks/cherry_picks.ts"
+  },
+  {
+    "brand": "repository.git.cherryPicks",
+    "methodName": "getCherryPick",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/cherry_picks/{cherry_pick_id}",
+    "source": "openapi/api/repository/git/cherry_picks/cherry_picks.ts"
+  },
+  {
+    "brand": "repository.git.cherryPicks",
+    "methodName": "getCherryPickByIid",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/cherry_picks/iid/{cherry_pick_iid}",
+    "source": "openapi/api/repository/git/cherry_picks/cherry_picks.ts"
+  },
+  {
+    "brand": "repository.git.commitChecker",
+    "methodName": "addCheck",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/commit/{sha}/statuses",
+    "source": "openapi/api/repository/git/commit_checker/commit_checker.ts"
+  },
+  {
+    "brand": "repository.git.commitChecker",
+    "methodName": "getCombinedStatus",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/commits/{ref}/status",
+    "source": "openapi/api/repository/git/commit_checker/commit_checker.ts"
+  },
+  {
+    "brand": "repository.git.commitChecker",
+    "methodName": "listStatuses",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/commits/{ref}/statuses",
+    "source": "openapi/api/repository/git/commit_checker/commit_checker.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "cherryPick",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/commit/cherry_pick",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "cherryPick4MultiSource",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/commit/cherry_pick_for_multi_source",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "createNote4Commit",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/comments",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "downloadChangedFiles",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/changed_files",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "getCommit",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "getDiff4Commit",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/diff",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "getNote4Commit",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/comments",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "getRefs4Commit",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/refs",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "getRepositoryCommits",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/commits",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "replyNote4Commit",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/notes/{note_id}/replies",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "revertCommit",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/revert",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.commits",
+    "methodName": "updateNote4Commit",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/commits/{sha}/notes/{note_id}",
+    "source": "openapi/api/repository/git/commits/commits.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "createFile",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/files",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "deleteFile",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/files",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "getBatchBlame",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/files/blames",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "getBlame",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/files/{file_path}/blame",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "getFile",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/files",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "getFilesInfo",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/files_info",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "modifyFile",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/files",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.files",
+    "methodName": "saveOrUpdateAndDeleteFiles",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/files/batch",
+    "source": "openapi/api/repository/git/files/files.ts"
+  },
+  {
+    "brand": "repository.git.locks",
+    "methodName": "batchCreateLocks",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/locks/batchCreate",
+    "source": "openapi/api/repository/git/locks/locks.ts"
+  },
+  {
+    "brand": "repository.git.locks",
+    "methodName": "batchDeleteLocks",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/locks/batchDelete",
+    "source": "openapi/api/repository/git/locks/locks.ts"
+  },
+  {
+    "brand": "repository.git.locks",
+    "methodName": "createLocks",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/locks",
+    "source": "openapi/api/repository/git/locks/locks.ts"
+  },
+  {
+    "brand": "repository.git.locks",
+    "methodName": "deleteLocks",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/locks",
+    "source": "openapi/api/repository/git/locks/locks.ts"
+  },
+  {
+    "brand": "repository.git.locks",
+    "methodName": "getLocks",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/locks",
+    "source": "openapi/api/repository/git/locks/locks.ts"
+  },
+  {
+    "brand": "repository.git.preReceiveHook",
+    "methodName": "createPreReceiveHook",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/pre_hooks",
+    "source": "openapi/api/repository/git/pre_receive_hook/pre_receive_hook.ts"
+  },
+  {
+    "brand": "repository.git.preReceiveHook",
+    "methodName": "deletePreReceiveHook",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/pre_hooks/{id}",
+    "source": "openapi/api/repository/git/pre_receive_hook/pre_receive_hook.ts"
+  },
+  {
+    "brand": "repository.git.preReceiveHook",
+    "methodName": "listPreReceiveHookModules",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/pre_hooks",
+    "source": "openapi/api/repository/git/pre_receive_hook/pre_receive_hook.ts"
+  },
+  {
+    "brand": "repository.git.preReceiveHook",
+    "methodName": "listPreReceiveHooks",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/pre_hooks/list",
+    "source": "openapi/api/repository/git/pre_receive_hook/pre_receive_hook.ts"
+  },
+  {
+    "brand": "repository.git.preReceiveHook",
+    "methodName": "updatePreReceiveHook",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/pre_hooks/{id}",
+    "source": "openapi/api/repository/git/pre_receive_hook/pre_receive_hook.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/releases",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/releases/{tag_name}",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "deleteAttachment",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/releases/{tag_name}/attachments/{attachment_name}",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "downloadAttachment",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/releases/{tag_name}/attachments/{attachment_name}",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "getReleaseById",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/releases/{tag_name}",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "listReleases",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/releases",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.release",
+    "methodName": "update",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/releases/{tag_name}",
+    "source": "openapi/api/repository/git/release/release.ts"
+  },
+  {
+    "brand": "repository.git.tags",
+    "methodName": "createTag",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/tags",
+    "source": "openapi/api/repository/git/tags/tags.ts"
+  },
+  {
+    "brand": "repository.git.tags",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/repository/tags/{tag}",
+    "source": "openapi/api/repository/git/tags/tags.ts"
+  },
+  {
+    "brand": "repository.git.tags",
+    "methodName": "getTag",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/tags/{tag}",
+    "source": "openapi/api/repository/git/tags/tags.ts"
+  },
+  {
+    "brand": "repository.git.tags",
+    "methodName": "getTags",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/tags",
+    "source": "openapi/api/repository/git/tags/tags.ts"
+  },
+  {
+    "brand": "repository.git.tags",
+    "methodName": "updateTag",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/repository/tag_setting",
+    "source": "openapi/api/repository/git/tags/tags.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "addOrUpdateLfsFile",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/repository/lfs/file",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "compare",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/compare",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "compareCommits",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/compare/commits",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "compareDiffFiles",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/compare/changed_files/list",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "getArchive",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/archive",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "getLfsFile",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/lfs/file",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "getRaw",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/blobs/{sha}",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "getRawByFileObjectId",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/raw_blobs/{sha}",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.git",
+    "methodName": "getTrees",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/repository/tree",
+    "source": "openapi/api/repository/git/git.ts"
+  },
+  {
+    "brand": "repository.svn.authority",
+    "methodName": "addPathAuthority",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/authority",
+    "source": "openapi/api/repository/svn/authority/authority.ts"
+  },
+  {
+    "brand": "repository.svn.authority",
+    "methodName": "getPathAuthorityFacade",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/authority",
+    "source": "openapi/api/repository/svn/authority/authority.ts"
+  },
+  {
+    "brand": "repository.svn.authority",
+    "methodName": "modifyPathAuthority",
+    "httpMethod": "PUT",
+    "path": "/svn/projects/{id_or_path}/authority",
+    "source": "openapi/api/repository/svn/authority/authority.ts"
+  },
+  {
+    "brand": "repository.svn.authority",
+    "methodName": "search",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/authority_member",
+    "source": "openapi/api/repository/svn/authority/authority.ts"
+  },
+  {
+    "brand": "repository.svn.branches",
+    "methodName": "create",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/branches",
+    "source": "openapi/api/repository/svn/branches/branches.ts"
+  },
+  {
+    "brand": "repository.svn.branches",
+    "methodName": "delete",
+    "httpMethod": "DELETE",
+    "path": "/svn/projects/{id_or_path}/branches",
+    "source": "openapi/api/repository/svn/branches/branches.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "createPreConf",
+    "httpMethod": "POST",
+    "path": "/svn/projects/{id_or_path}/commit_settings",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "getCommits",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/commits",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "getDiffFiles",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/commits/{revision}/diff_files",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "getPreConf",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/commit_settings/{preconf_id}",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "getRevision",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/commits/{revision}",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "listPreConfs",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/commit_settings",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.commits",
+    "methodName": "updatePreConf",
+    "httpMethod": "PUT",
+    "path": "/svn/projects/{id_or_path}/commit_settings/{preconf_id}",
+    "source": "openapi/api/repository/svn/commits/commits.ts"
+  },
+  {
+    "brand": "repository.svn.locks",
+    "methodName": "getFilelock",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/locks",
+    "source": "openapi/api/repository/svn/locks/locks.ts"
+  },
+  {
+    "brand": "repository.svn.locks",
+    "methodName": "lock",
+    "httpMethod": "PUT",
+    "path": "/svn/projects/{id_or_path}/locks/lock",
+    "source": "openapi/api/repository/svn/locks/locks.ts"
+  },
+  {
+    "brand": "repository.svn.locks",
+    "methodName": "unLock",
+    "httpMethod": "PUT",
+    "path": "/svn/projects/{id_or_path}/locks/unlock",
+    "source": "openapi/api/repository/svn/locks/locks.ts"
+  },
+  {
+    "brand": "repository.svn.tree",
+    "methodName": "getTree",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/tree",
+    "source": "openapi/api/repository/svn/tree/tree.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "activate",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/hooks/{hook_id}/activate",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "createWebHook",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/hooks",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "deleteWebHook",
+    "httpMethod": "DELETE",
+    "path": "/projects/{id_or_path}/hooks/{hook_id}",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "getWebHook",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/hooks/{hook_id}",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "getWebHookLog",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/hook_logs/{hook_log_id}",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "listWebHooks",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/hooks",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "retry",
+    "httpMethod": "POST",
+    "path": "/projects/{id_or_path}/hook_logs/{hook_log_id}/retry",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "searchWebHookLogs",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/hook_logs",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "test",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/hooks/{hook_id}/test",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "repository.svn.webhooks",
+    "methodName": "updateWebHook",
+    "httpMethod": "PUT",
+    "path": "/projects/{id_or_path}/hooks/{hook_id}",
+    "source": "openapi/api/repository/svn/webhooks/webhooks.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getBranchLifeCycle",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/branch/lifecycle",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getCommitDiffs",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/commit/list",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getCommitLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/commit/diff",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getCommits",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/commits",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getFileDiffs",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/file/diffs",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getFileList",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/file/paths",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectCodeLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/users/{id}/lang",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectCodeUserDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/users/{id}/diff",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectDailyCommitCount",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/daily/count",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectDailyDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/daily/diff",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/lang/diff",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.git",
+    "methodName": "getProjectUserDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/user/diff",
+    "source": "openapi/api/statistic/git/git.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getCommitDiffs",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/commit/list",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getCommitLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/commit/diff",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getCommits",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/commits",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getFileDiffs",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/file/diffs",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getFileList",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/file/paths",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectCodeLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/users/{id}/lang",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectCodeUserDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/users/{id}/diff",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectDailyCommitCount",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/daily/count",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectDailyDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/daily/diff",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectLangDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/lang/diff",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "statistic.svn",
+    "methodName": "getProjectUserDiff",
+    "httpMethod": "GET",
+    "path": "/projects/{id_or_path}/tloc/svn/user/diff",
+    "source": "openapi/api/statistic/svn/svn.ts"
+  },
+  {
+    "brand": "svn.repository.tree",
+    "methodName": "getFile",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/file",
+    "source": "openapi/api/svn/repository/tree/tree.ts"
+  },
+  {
+    "brand": "svn.repository.tree",
+    "methodName": "getFileProperty",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/file/property",
+    "source": "openapi/api/svn/repository/tree/tree.ts"
+  },
+  {
+    "brand": "svn.repository.tree",
+    "methodName": "getRawFile",
+    "httpMethod": "GET",
+    "path": "/svn/projects/{id_or_path}/file/raw",
+    "source": "openapi/api/svn/repository/tree/tree.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "createEmail4CurrentUser",
+    "httpMethod": "POST",
+    "path": "/user/emails",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "createEmail4User",
+    "httpMethod": "POST",
+    "path": "/users/{id}/emails",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "deleteEmail4CurrentUser",
+    "httpMethod": "DELETE",
+    "path": "/user/emails/{id}",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "deleteEmail4User",
+    "httpMethod": "DELETE",
+    "path": "/users/{uid}/emails/{id}",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "getEmailById",
+    "httpMethod": "GET",
+    "path": "/user/emails/{id}",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "getEmails4CurrentUser",
+    "httpMethod": "GET",
+    "path": "/user/emails",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "getEmailsForUser",
+    "httpMethod": "GET",
+    "path": "/users/{id}/emails",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.email",
+    "methodName": "getUserByEmail",
+    "httpMethod": "GET",
+    "path": "/user/email",
+    "source": "openapi/api/users/email/email.ts"
+  },
+  {
+    "brand": "users.identity",
+    "methodName": "createIdentity",
+    "httpMethod": "POST",
+    "path": "/users/{id}/identity",
+    "source": "openapi/api/users/identity/identity.ts"
+  },
+  {
+    "brand": "users.identity",
+    "methodName": "getCurrentUser",
+    "httpMethod": "GET",
+    "path": "/user",
+    "source": "openapi/api/users/identity/identity.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "createSshkey",
+    "httpMethod": "POST",
+    "path": "/user/keys",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "createSshkey4User",
+    "httpMethod": "POST",
+    "path": "/users/{id}/keys",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "deleteSshkey4CurrentUser",
+    "httpMethod": "DELETE",
+    "path": "/user/keys/{id}",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "deleteSshkey4User",
+    "httpMethod": "DELETE",
+    "path": "/user/{uid}/keys/{id}",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "getCurrentUserSshkeys",
+    "httpMethod": "GET",
+    "path": "/user/keys",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "getSshkey",
+    "httpMethod": "GET",
+    "path": "/user/keys/{id}",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users.sshKeys",
+    "methodName": "getSshkeys4User",
+    "httpMethod": "GET",
+    "path": "/users/{id}/keys",
+    "source": "openapi/api/users/ssh_keys/ssh_keys.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "blockUser",
+    "httpMethod": "PUT",
+    "path": "/users/{id}/block",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "createUser",
+    "httpMethod": "POST",
+    "path": "/users",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "deleteUser",
+    "httpMethod": "DELETE",
+    "path": "/users/{id}",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "getUserById",
+    "httpMethod": "GET",
+    "path": "/users/{idOrUsername}",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "getUsers",
+    "httpMethod": "GET",
+    "path": "/users",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "getWatchingProjects",
+    "httpMethod": "GET",
+    "path": "/user/watched",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "loginToGetToken",
+    "httpMethod": "POST",
+    "path": "/session",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "resetPassword",
+    "httpMethod": "PUT",
+    "path": "/user/password",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "unblockUser",
+    "httpMethod": "PUT",
+    "path": "/users/{uid}/unblock",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "updateUser",
+    "httpMethod": "PUT",
+    "path": "/users/{id}",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "validateUser",
+    "httpMethod": "POST",
+    "path": "/user/validate",
+    "source": "openapi/api/users/users.ts"
+  },
+  {
+    "brand": "users",
+    "methodName": "verifyUser",
+    "httpMethod": "POST",
+    "path": "/user/verify",
+    "source": "openapi/api/users/users.ts"
+  }
+]
