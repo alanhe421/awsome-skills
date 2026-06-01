@@ -113,6 +113,13 @@ node scripts/tgit.js repository.git.branches.create '{"id_or_path":12345,"branch
 node scripts/tgit.js projects.mergeRequest.searchMergeRequests '{"id_or_path":12345,"state":"opened","per_page":20}'
 ```
 
+MR 的地址通常会返回成这种格式：
+
+- `https://git.code.tencent.com/<group>/<project>/merge_requests/<iid>`
+- 脱敏示例：`https://git.code.tencent.com/xxxx/xxx/merge_requests/6`
+
+如果接口返回了 `web_url`，优先直接把它回给用户。
+
 ### 查看文件
 
 ```bash
