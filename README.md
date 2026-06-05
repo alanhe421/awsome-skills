@@ -33,3 +33,4 @@ npx skills add alanhe/awsome-claude-skills -g -a claude-code --skill glab
 - [`tgit2`](./tgit2) — 用自然语言调用兼容 Git 平台的 REST API，基于 npm 包 [`tgit-api`](https://www.npmjs.com/package/tgit-api) 封装；token 走 `TGIT_TOKEN` 环境变量，地址走 `TGIT_BASE_URL`（可选，默认 `https://git.code.tencent.com/api/v3`）
 - [`twitter-hot-search`](./twitter-hot-search) — 用官方 X/Twitter API v2 recent search 检索最新/热门推文；token 走 `X_BEARER_TOKEN` 或 `TWITTER_BEARER_TOKEN`，默认控制请求页数以节省免费额度
 - [`glab`](./glab) — GitLab CLI 的 glab 命令封装，支持多实例自动检测和手动指定；token 走 `GITLAB_TOKEN` 环境变量，地址走 `GITLAB_HOST`（可选，glab 内也有多实例配置）
+- [`腾讯文档`](./tencent-docs) — 腾讯文档，官方自己托管到GitHub很难吗，无语了，这里我托管下，数据源于 https://skillhub.cn/skills/tencent-docs
