@@ -18,11 +18,11 @@ npx skills add alanhe/awsome-claude-skills -g -a claude-code --skill '*'
 也可以只安装其中一个：
 
 ```bash
-npx skills add alanhe/awsome-skills -g -a claude-code --skill wechat-mp-docs
-npx skills add alanhe/awsome-skills -g -a claude-code --skill tgit2
-npx skills add alanhe/awsome-skills -g -a claude-code --skill twitter-hot-search
-npx skills add alanhe/awsome-skills -g -a claude-code --skill glab
-npx skills add alanhe/awsome-skills -g -a claude-code --skill tencent-docs
+npx skills add alanhe/awsome-skills -g --skill wechat-mp-docs
+npx skills add alanhe/awsome-skills -g --skill tgit2
+npx skills add alanhe/awsome-skills -g --skill twitter-hot-search
+npx skills add alanhe/awsome-skills -g --skill glab
+npx skills add alanhe/awsome-skills -g --skill tencent-docs
 ```
 
 说明：如需复制文件而不是创建链接，加 `--copy`；非交互安装加 `-y`。
