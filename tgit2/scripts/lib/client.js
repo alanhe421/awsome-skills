@@ -5,9 +5,15 @@ const JSONbig = require('json-bigint');
 const qs = require('qs');
 
 const JSONbigNative = JSONbig({ useNativeBigInt: false, storeAsString: true });
+const DEFAULT_TIMEOUT_MS = 30000;
+
+function normalizeTimeout(timeout) {
+  const value = Number(timeout);
+  return Number.isFinite(value) && value > 0 ? value : DEFAULT_TIMEOUT_MS;
+}
 
 function createClient(options) {
-  const { baseURL, token, tokenHeader = 'PRIVATE-TOKEN' } = options || {};
+  const { baseURL, token, tokenHeader = 'PRIVATE-TOKEN', timeout } = options || {};
 
   if (!token) {
     throw new Error('TGIT_TOKEN is required');
@@ -15,6 +21,7 @@ function createClient(options) {
 
   const http = axios.create({
     baseURL,
+    timeout: normalizeTimeout(timeout),
     headers: {
       'Content-Type': 'application/json',
       [tokenHeader]: token,
@@ -43,18 +50,6 @@ function createClient(options) {
       },
     },
   });
-
-  http.interceptors.response.use(
-    (response) => response,
-    (error) => {
-      const { response, config } = error || {};
-      if (response && response.status === 401 && config && !config.__retrying) {
-        console.error('Response return 401, Try again...');
-        return http.request({ ...config, __retrying: true });
-      }
-      throw error;
-    },
-  );
 
   function request(method, url, options) {
     return http.request({

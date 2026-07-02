@@ -25,11 +25,13 @@
    export TGIT_TOKEN=你的token
    export TGIT_BASE_URL=https://your-git-host.example.com/api/v3
    export TGIT_TOKEN_HEADER=PRIVATE-TOKEN
+   # 可选：export TGIT_TIMEOUT_MS=30000
    ```
 
    - `TGIT_TOKEN` 必填，通常是 private token 或 OAuth access token
    - `TGIT_BASE_URL` 可选，默认 `https://git.code.tencent.com/api/v3`
    - `TGIT_TOKEN_HEADER` 可选，默认 `PRIVATE-TOKEN`，如果你的实例使用别的 token 头可以改成 `OAUTH-TOKEN` 或 `Authorization`
+   - `TGIT_TIMEOUT_MS` 可选，默认 `30000`
 
    建议写进 `~/.zshrc` / `~/.bashrc` 持久化。
 

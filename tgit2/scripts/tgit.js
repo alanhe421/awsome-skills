@@ -37,6 +37,7 @@ function listMethods(api) {
 function printErrorAndExit(err) {
   const payload = {
     error: err.message,
+    code: err.code,
     status: err.response && err.response.status,
     statusText: err.response && err.response.statusText,
     data: err.response && err.response.data,
@@ -70,7 +71,8 @@ async function main() {
 
   const baseURL = process.env.TGIT_BASE_URL || 'https://git.code.tencent.com/api/v3';
   const tokenHeader = process.env.TGIT_TOKEN_HEADER || 'PRIVATE-TOKEN';
-  const client = createClient({ baseURL, token, tokenHeader });
+  const timeout = process.env.TGIT_TIMEOUT_MS;
+  const client = createClient({ baseURL, token, tokenHeader, timeout });
   const api = createApi(client);
 
   if (methodPath === '--list' || methodPath === '-l') {
