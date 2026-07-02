@@ -36,11 +36,14 @@ npm install
 export TGIT_TOKEN=你的token
 export TGIT_BASE_URL=https://your-git-host.example.com/api/v3
 export TGIT_TOKEN_HEADER=PRIVATE-TOKEN
+# 可选：export TGIT_TIMEOUT_MS=30000
 ```
 
 - `TGIT_TOKEN` 必填，通常是 private token 或 OAuth access token
 - `TGIT_BASE_URL` 可选，默认值是 `https://git.code.tencent.com/api/v3`
 - `TGIT_TOKEN_HEADER` 可选，默认值是 `PRIVATE-TOKEN`，如果你的实例使用别的 token 头可以改成 `OAUTH-TOKEN` 或 `Authorization`
+- `TGIT_TIMEOUT_MS` 可选，默认值是 `30000`；请求超时会直接失败，不会无限等待
+- 4xx 认证、权限、参数等客户端错误会直接返回，不会自动重试
 
 如果用户还没配置 token，先提示他设置环境变量，再继续执行。
 
@@ -63,7 +66,7 @@ node scripts/tgit.js --list
 - `method.path` 采用 dot 形式，通常是 `serviceBrand.methodName`
 - 例如 `projects.get`、`projects.members.getProjectMembers`、`repository.git.files.modifyFile`
 - `json-params` 是 JSON 字符串
-- URL 模板里的 `:id`、`:sha`、`:branch` 之类占位符，从 JSON 里同名字段取值
+- URL 模板里的 `{id_or_path}`、`{sha}`、`{branch}` 之类占位符，从 JSON 里同名字段取值，并由 wrapper 自动编码
 - `GET` 的剩余字段会拼 query string
 - `POST` / `PUT` / `DELETE` 的剩余字段会作为 body
 
@@ -98,7 +101,7 @@ node scripts/tgit.js projects '{"per_page":10,"order_by":"last_activity_at","sor
 ### 查看项目详情
 
 ```bash
-node scripts/tgit.js projects.get '{"id":"mygroup%2Fmyrepo"}'
+node scripts/tgit.js projects.get '{"id_or_path":"mygroup/myrepo"}'
 ```
 
 ### 创建分支
