@@ -23,6 +23,7 @@ npx skills add alanhe421/awsome-skills -g --skill tgit2
 npx skills add alanhe421/awsome-skills -g --skill twitter-hot-search
 npx skills add alanhe421/awsome-skills -g --skill glab
 npx skills add alanhe421/awsome-skills -g --skill tencent-docs
+npx skills add alanhe421/awsome-skills -g --skill hk-us-stock-analysis
 ```
 
 说明：如需复制文件而不是创建链接，加 `--copy`；非交互安装加 `-y`。
@@ -35,3 +36,4 @@ npx skills add alanhe421/awsome-skills -g --skill tencent-docs
 - [`twitter-hot-search`](./twitter-hot-search) — 用官方 X/Twitter API v2 recent search 检索最新/热门推文；token 走 `X_BEARER_TOKEN` 或 `TWITTER_BEARER_TOKEN`，默认控制请求页数以节省免费额度
 - [`glab`](./glab) — GitLab CLI 的 glab 命令封装，支持多实例自动检测和手动指定；token 走 `GITLAB_TOKEN` 环境变量，地址走 `GITLAB_HOST`（可选，glab 内也有多实例配置）
 - [`腾讯文档`](./tencent-docs) — 腾讯文档，官方自己托管到GitHub很难吗，无语了，这里我托管下，数据源于 https://skillhub.cn/skills/tencent-docs
+- [`hk-us-stock-analysis`](./hk-us-stock-analysis) — 港美股票分析，基于公开数据、公告、同业与估值方法生成中文研究报告，可输出独立 HTML 或 PDF

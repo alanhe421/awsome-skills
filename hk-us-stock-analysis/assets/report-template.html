@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{company_name}}（{{ticker}}）研究报告</title>
+  <style>
+    :root {
+      --ink: #18202a;
+      --muted: #5b6675;
+      --line: #d9dee7;
+      --soft: #f5f7fa;
+      --accent: #135c8a;
+      --warn: #9b3d21;
+      --good: #126346;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.62;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 42px 28px 64px;
+    }
+    header {
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 34px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+    p { margin: 8px 0 12px; }
+    ul { margin: 8px 0 14px 22px; padding: 0; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: var(--soft);
+      font-weight: 700;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .summary {
+      margin: 20px 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: var(--soft);
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 18px 0 20px;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      padding: 12px;
+      min-height: 78px;
+      background: #fff;
+    }
+    .metric-label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .metric-value {
+      margin-top: 4px;
+      font-size: 20px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    .negative { color: var(--warn); }
+    .positive { color: var(--good); }
+    .section-conclusion {
+      margin-top: 14px;
+      padding: 10px 12px;
+      background: #eef4f8;
+      border-left: 3px solid var(--accent);
+      font-weight: 600;
+    }
+    .disclaimer {
+      margin-top: 34px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      main { max-width: none; padding: 22mm 18mm; }
+      h2 { break-after: avoid; }
+      table, .metric, .summary { break-inside: avoid; }
+    }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 44px; }
+      .metrics { grid-template-columns: 1fr; }
+      h1 { font-size: 25px; }
+      table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>{{company_name}}（{{ticker}}）研究报告</h1>
+      <div class="meta">报告日期 {{report_date}} · 数据日期 {{data_date}} · 币种 {{currency}}</div>
+    </header>
+
+    <section class="metrics">
+      <div class="metric"><div class="metric-label">当前股价</div><div class="metric-value">{{price}}</div></div>
+      <div class="metric"><div class="metric-label">市值</div><div class="metric-value">{{market_cap}}</div></div>
+      <div class="metric"><div class="metric-label">所属行业</div><div class="metric-value">{{sector_industry}}</div></div>
+      <div class="metric"><div class="metric-label">DCF 公允价值</div><div class="metric-value">{{dcf_value}}</div></div>
+      <div class="metric"><div class="metric-label">多方法中枢估值</div><div class="metric-value">{{fair_value_mid}}</div></div>
+      <div class="metric"><div class="metric-label">相对当前股价隐含空间</div><div class="metric-value {{upside_class}}">{{implied_upside}}</div></div>
+    </section>
+
+    <div class="summary"><strong>结论：</strong>{{executive_conclusion}}</div>
+
+    <h2>1. 投资论点速查</h2>
+    {{investment_thesis}}
+
+    <h2>2. 商业模式</h2>
+    {{business_model}}
+
+    <h2>3. 行业与竞争格局</h2>
+    {{industry_competition}}
+
+    <h2>4. 财务分析</h2>
+    {{financial_analysis}}
+
+    <h2>5. 多方法估值</h2>
+    {{valuation}}
+
+    <h2>6. 管理层与内部人交易</h2>
+    {{management_insiders}}
+
+    <h2>7. 前瞻指引与展望</h2>
+    {{guidance_outlook}}
+
+    <h2>8. 催化剂与风险</h2>
+    {{catalysts_risks}}
+
+    <h2>9. 法律与监管</h2>
+    {{legal_regulatory}}
+
+    <h2>附录</h2>
+    {{appendix}}
+
+    <div class="disclaimer">
+      <strong>免责声明：</strong>本报告仅供教育与研究用途，不构成投资建议、证券买卖推荐或任何形式的投资顾问意见。数据可能存在错误、遗漏或滞后；估值模型对假设高度敏感。请在作出投资决策前自行研究并咨询持牌专业人士。
+    </div>
+  </main>
+</body>
+</html>
