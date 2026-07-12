@@ -1,13 +1,28 @@
 ---
 name: hk-us-stock-analysis
-description: "港美股票研究报告生成 Skill。Use when users provide a Hong Kong or US stock ticker and ask for stock analysis, equity research, valuation, investment thesis, financial report review, company analysis, DCF, peer comparison, SEC/HKEX filing review, or a PDF/standalone HTML stock research report."
+description: "港美股投资研究与基础知识 Skill。Use when users ask about Hong Kong or US stock analysis, investing basics, market mechanics, order types, trading hours, settlement, financial statements, valuation, portfolio risk, ETFs, dividends, corporate actions, SEC/HKEX filings, or request a PDF/standalone HTML equity research report."
 ---
 
 # 港美股票分析
 
-基于用户提供的港股或美股代码，收集公开市场、财务、公告、同业与新闻数据，生成类似券商研究报告的中文分析输出。默认输出为无外部 JS/CSS 的独立 HTML；用户明确要求 PDF 时，先生成 HTML，再用本地可用工具转换成 PDF。
+回答港美股投资基础问题，或基于用户提供的股票代码生成研究报告。先判断用户是在问概念、操作机制、风险，还是要求分析具体标的；不要把简单问答强制写成完整研报。个股报告默认输出为无外部 JS/CSS 的独立 HTML；用户明确要求 PDF 时，先生成 HTML，再用本地可用工具转换成 PDF。
 
-## 快速流程
+## 任务路由
+
+- 基础概念、市场机制、财报/估值术语、组合与风险问题：读取 `references/investing-basics.md`。
+- 港美股差异、交易时段、订单、结算、公司行动、披露与税费问题：同时读取 `references/hk-us-market-basics.md`；涉及当前规则、费用或税务时必须联网核验。
+- 具体股票、财报、估值或投资论点：执行下方“个股研究流程”，并读取 `references/data-sources.md` 与 `references/methodology.md`。
+- 用户问题同时包含知识问答和个股判断：先解释概念，再说明它如何影响该标的；事实、推断和情景假设分开写。
+
+## 问答原则
+
+1. 先给一句直接答案，再解释“是什么、为什么重要、如何核验、主要风险”。按问题复杂度增减，不机械堆满四段。
+2. 区分投资教育与个性化建议。若答案依赖资金期限、风险承受能力、税务居民身份或券商规则，指出依赖项，不替用户做适当性判断。
+3. 交易时间、结算周期、监管规则、税率、费用、指数成分和产品条款会变化，必须查询交易所、监管机构、税务机关、基金文件或券商官方页面，并标注核验日期。
+4. 不把“历史平均”“常见做法”写成保证；不承诺收益，不用单一指标得出买卖结论。
+5. 遇到期权、融资融券、杠杆/反向 ETF、卖空等可能超过本金或快速放大损失的产品，先解释最大损失、追加保证金、流动性和路径依赖，再讨论用途。
+
+## 个股研究流程
 
 1. 识别标的：确认 ticker、交易所、公司名称、币种、报告日期和数据日期。
 2. 获取最新数据：必须联网核验当前价格、市值、财报、公告和新闻，不要只依赖模型记忆。
@@ -50,6 +65,8 @@ description: "港美股票研究报告生成 Skill。Use when users provide a Ho
 
 ## 资源
 
+- `references/investing-basics.md`：投资框架、资产类型、复利、财报、估值、组合与风险基础。
+- `references/hk-us-market-basics.md`：港美股市场机制、订单与结算、披露、公司行动、税费及差异核验清单。
 - `references/data-sources.md`：港美股数据源、字段清单和核验规则。
 - `references/methodology.md`：分析维度、估值方法选择和质量检查清单。
 - `assets/report-template.html`：独立 HTML 报告模板，可复制后填充内容。
