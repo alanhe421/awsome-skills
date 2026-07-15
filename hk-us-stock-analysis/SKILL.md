@@ -1,6 +1,6 @@
 ---
 name: hk-us-stock-analysis
-description: "港美股投资研究与基础知识 Skill。Use when users ask about Hong Kong or US stock analysis, investing basics, market mechanics, order types, trading hours, settlement, financial statements, valuation, portfolio risk, ETFs, dividends, corporate actions, SEC/HKEX filings, or request a PDF/standalone HTML equity research report."
+description: "港美股投资研究与基础知识 Skill。Use when users ask about Hong Kong or US stock analysis, S1 signal charts or links, investing basics, market mechanics, order types, trading hours, settlement, financial statements, valuation, portfolio risk, ETFs, dividends, corporate actions, SEC/HKEX filings, or request a PDF/standalone HTML equity research report."
 ---
 
 # 港美股票分析
@@ -10,6 +10,7 @@ description: "港美股投资研究与基础知识 Skill。Use when users ask ab
 ## 任务路由
 
 - 基础概念、市场机制、财报/估值术语、组合与风险问题：读取 `references/investing-basics.md`。
+- S1 信号链接、截图或 B/S/1-24 数字判读：读取 `references/s1-signal.md`；只做信号状态与仓位情景框架，除非用户同时给出 ticker 并明确要求，否则不扩展成个股研报。
 - 港美股差异、交易时段、订单、结算、公司行动、披露与税费问题：同时读取 `references/hk-us-market-basics.md`；涉及当前规则、费用或税务时必须联网核验。
 - 具体股票、财报、估值或投资论点：执行下方“个股研究流程”，并读取 `references/data-sources.md` 与 `references/methodology.md`。
 - 用户问题同时包含知识问答和个股判断：先解释概念，再说明它如何影响该标的；事实、推断和情景假设分开写。
@@ -69,4 +70,5 @@ description: "港美股投资研究与基础知识 Skill。Use when users ask ab
 - `references/hk-us-market-basics.md`：港美股市场机制、订单与结算、披露、公司行动、税费及差异核验清单。
 - `references/data-sources.md`：港美股数据源、字段清单和核验规则。
 - `references/methodology.md`：分析维度、估值方法选择和质量检查清单。
+- `references/s1-signal.md`：S1 的 B/S/数字定义、截图判读流程、仓位情景模板与风险边界。
 - `assets/report-template.html`：独立 HTML 报告模板，可复制后填充内容。
